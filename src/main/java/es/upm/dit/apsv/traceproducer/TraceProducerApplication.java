@@ -46,7 +46,7 @@ public class TraceProducerApplication {
 	public Supplier<String> checkTrace() {
 		Supplier<String> traceSupplier = () -> {
 			if (messages.size() >0) {
-				//log.info(messages.get(n % messages.size() ));
+				log.info(messages.get(n % messages.size() ));
 				return messages.get(n++ % messages.size());
 			}
 			else return null;
